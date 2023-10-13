@@ -122,6 +122,16 @@ ol {
   box-shadow: 0 4px 22px -2px rgb(38, 104, 148);
   /* background-color: rgb(32, 126, 189); */
 }
+
+.onred {
+  /* background-color: rgb(15, 15, 15) !important; */
+  background-color: rgb(216, 58, 58) !important;
+  padding: 0 !important;
+  opacity: 0.95;
+  box-shadow: 0 4px 22px -2px rgb(148, 38, 38);
+  /* background-color: rgb(32, 126, 189); */
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {

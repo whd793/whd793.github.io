@@ -4,6 +4,56 @@
   }
 }
 
+/* VIDEO CAROUSEL */
+
+.carousel {
+  max-width: 1650px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel_items {
+  display: flex;
+  animation: carousel 30s linear infinite;
+}
+
+.carousel_img {
+  display: block;
+  /* width: 650px; */
+  object-fit: cover;
+}
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.carousel:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to left, rgba(249, 8, 8, 0), rgb(184, 33, 0));
+  content: "";
+  z-index: 2;
+}
+
+.carousel:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: linear-gradient(to right, rgba(249, 8, 8, 0), rgb(184, 33, 0));
+  content: "";
+  z-index: 2;
+}
+
 /* BACKGROUND SVG AND IMAGE */
 
 .sectionz {
@@ -52,6 +102,22 @@
   background-color: rgb(240, 240, 240);
   color: #555;
 }
+
+.sectionz.sectionz--studio {
+  background-color: rgb(184 33 0);
+  color: white;
+}
+
+.sectionz.sectionz--studio svg {
+  /* top: -20px; */
+  fill: rgb(184 33 0);
+}
+/* 
+.sectionz.sectionz--studio h2 {
+  background-color: rgb(240, 240, 240);
+  color: #555;
+} */
+
 .sectionz.sectionz--about {
   background: rgb(255, 255, 255);
 }
