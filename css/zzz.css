@@ -11,10 +11,16 @@
   margin: 0 auto;
   overflow: hidden;
 }
-
 .carousel_items {
   display: flex;
-  animation: carousel 30s linear infinite;
+  animation: carousel 5s linear infinite;
+}
+
+@media screen and (min-width: 782px) {
+  .carousel_items {
+    display: flex;
+    animation: carousel 30s linear infinite;
+  }
 }
 
 .carousel_img {
