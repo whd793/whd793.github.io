@@ -135,7 +135,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 80px;
   height: 100%;
   background: linear-gradient(to left, rgba(249, 8, 8, 0), rgb(184, 33, 0));
   content: "";
@@ -146,7 +146,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
+  width: 80px;
   height: 100%;
   background: linear-gradient(to right, rgba(249, 8, 8, 0), rgb(184, 33, 0));
   content: "";
