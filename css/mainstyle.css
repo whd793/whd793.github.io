@@ -116,7 +116,14 @@ ol {
 }
 .on {
   /* background-color: rgb(15, 15, 15) !important; */
-  background-color: rgb(58, 153, 216) !important;
+  /* background-color: rgb(58, 153, 216) !important; */
+  background-color: rgb(97 28 255) !important;
+  /* background-image: url(../img/mbg.svg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; */
+
   padding: 0 !important;
   opacity: 0.95;
   box-shadow: 0 4px 22px -2px rgb(38, 104, 148);

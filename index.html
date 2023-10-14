@@ -628,7 +628,7 @@
           <video
             class="carousel_img"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -637,15 +637,16 @@
             playsinline
           >
             <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
-            <source src="vids/11.mp4" type="video/mp4" />
+            <source src="vids/15.mp4" type="video/mp4" />
             <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
           화면에 표시됩니다! -->
           </video>
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -654,15 +655,16 @@
             playsinline
           >
             <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
-            <source src="vids/12.mp4" type="video/mp4" />
+            <source src="vids/16.mp4" type="video/mp4" />
             <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
           화면에 표시됩니다! -->
           </video>
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -678,8 +680,9 @@
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -695,8 +698,9 @@
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -705,15 +709,16 @@
             playsinline
           >
             <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
-            <source src="vids/15.mp4" type="video/mp4" />
+            <source src="vids/11.mp4" type="video/mp4" />
             <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
     화면에 표시됩니다! -->
           </video>
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -722,32 +727,16 @@
             playsinline
           >
             <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
-            <source src="vids/16.mp4" type="video/mp4" />
+            <source src="vids/12.mp4" type="video/mp4" />
             <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
   화면에 표시됩니다! -->
           </video>
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
-            style="margin: auto"
-            loop
-            autoplay
-            muted
-            defaultmuted
-            playsinline
-          >
-            <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
-            <source src="vids/17.mp4" type="video/mp4" />
-            <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-화면에 표시됩니다! -->
-          </video>
-
-          <video
-            class="carousel_img"
-            height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -763,8 +752,9 @@
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -780,8 +770,9 @@
 
           <video
             class="carousel_img"
+            loading="lazy"
             height="400px"
-            width="100%"
+            width="220px"
             style="margin: auto"
             loop
             autoplay
@@ -1567,5 +1558,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script> -->
     <script src="js/script.js?v=1.0"></script>
+
+    <script>
+      // Function to pause the video
+      function pauseVideo(video) {
+        if (video && !video.paused) {
+          video.pause();
+        }
+      }
+
+      // Initialize Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+            if (entry.isIntersecting) {
+              if (video.paused) {
+                video.play();
+              }
+            } else {
+              pauseVideo(video);
+            }
+          });
+        },
+        { threshold: 0 }
+      );
+
+      // Select all video elements with the class "carousel_img"
+      const videos = document.querySelectorAll(".carousel_img");
+
+      // Add each video to the Intersection Observer
+      videos.forEach((video) => {
+        observer.observe(video);
+      });
+    </script>
   </body>
 </html>

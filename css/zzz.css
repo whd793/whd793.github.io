@@ -5,18 +5,103 @@
 }
 
 /* VIDEO CAROUSEL */
+@media screen and (min-width: 960px) {
+  .carousel {
+    max-width: 1050px;
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .carousel:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(249, 8, 8, 0), rgb(184, 33, 0));
+    content: "";
+    z-index: 2;
+  }
+
+  .carousel:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(249, 8, 8, 0), rgb(184, 33, 0));
+    content: "";
+    z-index: 2;
+  }
+}
 
 .carousel {
-  max-width: 1650px;
+  max-width: 1050px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 .carousel_items {
   display: flex;
-  animation: carousel 10s linear infinite;
+  /* width: 1650px; */
+  animation: slider 15s ease infinite;
 }
 
-@media screen and (min-width: 782px) {
+/* .carousel_items video {
+  width: 600px;
+} */
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  8% {
+    transform: translateX(0);
+  }
+  16% {
+    transform: translateX(-220px);
+  }
+  24% {
+    transform: translateX(-220px);
+  }
+  32% {
+    transform: translateX(-440px);
+  }
+  40% {
+    transform: translateX(-440px);
+  }
+  48% {
+    transform: translateX(-660px);
+  }
+  56% {
+    transform: translateX(-660px);
+  }
+  64% {
+    transform: translateX(-880px);
+  }
+  72% {
+    transform: translateX(-880px);
+  }
+  80% {
+    transform: translateX(-1100px);
+  }
+  88% {
+    transform: translateX(-1100px);
+  }
+  /* 84% {
+    transform: translateX(-1320px);
+  }
+  87% {
+    transform: translateX(-1320px);
+  } */
+
+  96% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* @media screen and (min-width: 782px) {
   .carousel_items {
     display: flex;
     animation: carousel 30s linear infinite;
@@ -29,7 +114,7 @@
       transform: translateX(-100%);
     }
   }
-}
+} */
 
 .carousel_img {
   display: block;
@@ -42,7 +127,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-550%);
+    transform: translateX(-100%);
   }
 }
 
@@ -50,7 +135,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 50px;
   height: 100%;
   background: linear-gradient(to left, rgba(249, 8, 8, 0), rgb(184, 33, 0));
   content: "";
@@ -61,7 +146,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 250px;
+  width: 50px;
   height: 100%;
   background: linear-gradient(to right, rgba(249, 8, 8, 0), rgb(184, 33, 0));
   content: "";
