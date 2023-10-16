@@ -267,12 +267,14 @@
 
 .sectionz.sectionz--portfolio1 {
   /* background-color: #3A99D8; */
-  background: linear-gradient(#3a99d8, #217cb9, #550898);
+  /* background: linear-gradient(#3a99d8, #217cb9, #550898); */
+  background-color: rgb(240, 240, 240);
   color: white;
 }
 .sectionz.sectionz--portfolio1 svg {
   top: -49px;
-  fill: #3a99d8;
+  /* fill: #3a99d8; */
+  fill: rgb(240, 240, 240);
 }
 .sectionz.sectionz--pepperhill svg {
   top: -50px;
