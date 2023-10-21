@@ -627,7 +627,7 @@
         <div class="carousel_items">
           <video
             id="myVideoID"
-            class="carousel_img"
+            class="carousel_img inlinevideo"
             height="400px"
             width="3350px"
             style="margin: auto"
@@ -1415,6 +1415,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script> -->
     <script src="js/script.js?v=1.0"></script>
+    <script>
+      //PLAYS VIDEO IN LOW POWER MODE
+      $("body").on("click touchstart", function () {
+        var videoElement = document.getElementsByClassName("inlinevideo");
+        if (videoElement.playing) {
+        } else {
+          $(".inlinevideo").trigger("play");
+        }
+      });
+    </script>
     <!-- <script>
       const videoElement = document.getElementById("myVideoID");
       videoElement
