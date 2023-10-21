@@ -424,7 +424,8 @@
   /* Add space between the border and the content */
   /* padding: 8px; */
 
-  /* border-radius: 12px; */
+  border-radius: 12px;
+  overflow: hidden;
 
   /* padding: 10px; */
   margin: 5px;

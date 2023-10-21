@@ -44,7 +44,7 @@
 .carousel_items {
   display: flex;
   /* width: 1650px; */
-  animation: slider 15s ease infinite;
+  animation: slider 17s ease infinite;
 }
 
 /* .carousel_items video {
@@ -113,7 +113,7 @@
     transform: translateX(-2700px);
   }
   100% {
-    transform: translateX(-0px);
+    transform: translateX(0px);
   }
 }
 /* @media screen and (min-width: 782px) {
