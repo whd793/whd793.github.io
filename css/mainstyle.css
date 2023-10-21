@@ -359,6 +359,12 @@ ol {
   /* animation: shrink 5s  ease-in; */
 }
 
+@media (max-width: 768px) {
+  #home {
+    background-attachment: scroll; /* Change attachment property for smaller screens */
+  }
+}
+
 #home p.lead {
   color: #fff;
 }

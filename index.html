@@ -626,6 +626,7 @@
       <div class="carousel">
         <div class="carousel_items">
           <video
+            id="myVideoID"
             class="carousel_img"
             height="400px"
             width="3350px"
@@ -1414,6 +1415,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.min.js"></script> -->
     <script src="js/script.js?v=1.0"></script>
+    <!-- <script>
+      const videoElement = document.getElementById("myVideoID");
+      videoElement
+        .play()
+        .then(() => {})
+        .catch((error) => {
+          videoElement.setAttribute("controls", "controls");
+        });
+    </script> -->
 
     <!-- <script>
       // Function to pause the video
