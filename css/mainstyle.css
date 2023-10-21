@@ -353,6 +353,9 @@ ol {
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: #cfcfcf;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   /* animation: shrink 5s  ease-in; */
 }
 
