@@ -30,14 +30,14 @@ function main() {
     /*====================================
          Show Menu on Book
          ======================================*/
-    $(window).bind("scroll", function () {
-      var navHeight = $("#home").height() - 350;
-      if ($(window).scrollTop() > navHeight) {
-        $(".navbar-default").addClass("on");
-      } else {
-        $(".navbar-default").removeClass("on");
-      }
-    });
+    // $(window).bind("scroll", function () {
+    //   var navHeight = $("#home").height() - 350;
+    //   if ($(window).scrollTop() > navHeight) {
+    //     $(".navbar-default").addClass("on");
+    //   } else {
+    //     $(".navbar-default").removeClass("on");
+    //   }
+    // });
 
     // $(window).bind("scroll", function () {
     //   var navHeightstudio = $("#portfolio").height() - $("#studio").height();
@@ -53,14 +53,14 @@ function main() {
     //   }
     // });
 
-    $(window).bind("scroll", function () {
-      var navHeight = $("#home").height() - 350;
-      if ($(window).scrollTop() > navHeight) {
-        $(".side").removeClass("on");
-      } else {
-        $(".side").removeClass("on");
-      }
-    });
+    // $(window).bind("scroll", function () {
+    //   var navHeight = $("#home").height() - 350;
+    //   if ($(window).scrollTop() > navHeight) {
+    //     $(".side").removeClass("on");
+    //   } else {
+    //     $(".side").removeClass("on");
+    //   }
+    // });
 
     // $(window).bind("scroll", function () {
     //   var navHeight = $("#home").height() - 350;
