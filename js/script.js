@@ -121,40 +121,40 @@ function initAnimations() {
 $(document).ready(function () {
   // initNavbar();
   // initPortfolio();
-  // initAnimations();
+  initAnimations();
 
   // var skillsDiv = jQuery('#skillzz');
 
-  // jQuery(".skillbar").each(function () {
-  //   jQuery(this)
-  //     .find(".skillbar-bar")
-  //     .animate(
-  //       {
-  //         width: jQuery(this).attr("data-percent"),
-  //       },
-  //       2000
-  //     );
-  // });
+  jQuery(".skillbar").each(function () {
+    jQuery(this)
+      .find(".skillbar-bar")
+      .animate(
+        {
+          width: jQuery(this).attr("data-percent"),
+        },
+        2000
+      );
+  });
 
   // Something happens
 });
 
-// $(document).ready(function () {
-//   $(".portfolio-item .rowzz").isotope(function () {
-//     itemSelector: ".itemtwo";
-//   });
+$(document).ready(function () {
+  $(".portfolio-item .rowzz").isotope(function () {
+    itemSelector: ".itemtwo";
+  });
 
-//   $(".portfolio-menu ul li").click(function () {
-//     $(".portfolio-menu ul li").removeClass("active");
-//     $(this).addClass("active");
+  $(".portfolio-menu ul li").click(function () {
+    $(".portfolio-menu ul li").removeClass("active");
+    $(this).addClass("active");
 
-//     var selector = $(this).attr("data-filter");
-//     $(".portfolio-item .rowzz").isotope({
-//       filter: selector,
-//     });
-//     return false;
-//   });
-// });
+    var selector = $(this).attr("data-filter");
+    $(".portfolio-item .rowzz").isotope({
+      filter: selector,
+    });
+    return false;
+  });
+});
 
 // $(window).on("load", function() {
 
