@@ -474,7 +474,8 @@ input[type="email"]:focus {
 }
 .address {
   display: block;
-  color: #3992cf;
+  /* color: #3992cf; */
+  color: #01ad71;
   font-weight: 600;
   font-size: 22px;
 }

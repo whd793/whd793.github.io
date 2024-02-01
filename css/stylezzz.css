@@ -77,7 +77,7 @@
 }
 
 .icicz {
-  width: 210px;
+  width: 160px;
   z-index: 100;
   top: 5px;
   position: relative;
@@ -109,7 +109,7 @@
   float: center;
   margin: auto;
   background-color: white;
-  height: 220px;
+  /* height: 220px; */
   width: 220px;
   border-radius: 50%;
 }
@@ -121,6 +121,22 @@
 
 .bold {
   color: black;
+}
+
+.skz {
+  padding: 12px 16px;
+  /* border: 1px solid #5228ba; */
+
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fcfcfc;
+  /* background-color: #4a1dbb; */
+  background: #6826f9;
+  display: inline-block;
+  /* width: 50%; */
+  /* margin: auto; */
+  margin: 6px auto;
 }
 
 .content .scroll-nav {
@@ -341,7 +357,8 @@
   font-size: 12px;
   font-weight: 600;
   color: #fcfcfc;
-  background-color: #4a1dbb;
+  /* background-color: #4a1dbb; */
+  background: #6826f9;
   width: 50%;
   /* margin: auto; */
   margin: 6px auto;
