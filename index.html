@@ -1918,7 +1918,7 @@
                   playsinline
                 >
                   <!-- <source src="gifs/tiktok-clone.ogg" type="video/ogg" /> -->
-                  <source src="vids/tiktokp.mov" type="video/mp4" />
+                  <source src="gifs/tiktok-clone.mp4" type="video/mp4" />
                   <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
                   화면에 표시됩니다! -->
                 </video>
@@ -2148,38 +2148,6 @@
         });
     </script> -->
 
-    <!-- <script>
-      // Function to pause the video
-      function pauseVideo(video) {
-        if (video && !video.paused) {
-          video.pause();
-        }
-      }
-
-      // Initialize Intersection Observer
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            const video = entry.target;
-            if (entry.isIntersecting) {
-              if (video.paused) {
-                video.play();
-              }
-            } else {
-              pauseVideo(video);
-            }
-          });
-        },
-        { threshold: 0 }
-      );
-
-      // Select all video elements with the class "carousel_img"
-      const videos = document.querySelectorAll("video");
-
-      // Add each video to the Intersection Observer
-      videos.forEach((video) => {
-        observer.observe(video);
-      });
-    </script> -->
+  
   </body>
 </html>
