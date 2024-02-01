@@ -199,10 +199,12 @@ ol {
 
   .side {
     display: none;
+    z-index: -1;
   }
 
   .rside {
     display: none;
+    z-index: -1;
   }
 
   #home .layer {
