@@ -79,36 +79,36 @@ function initNavbar() {
 //   });
 // }
 
-function initAnimations() {
-  var $animated = $(".animated");
+// function initAnimations() {
+//   var $animated = $(".animated");
 
-  $animated.appear({
-    force_process: true,
-  });
+//   $animated.appear({
+//     force_process: true,
+//   });
 
-  $animated.on("appear", function () {
-    var $el = $(this);
+//   $animated.on("appear", function () {
+//     var $el = $(this);
 
-    var animation = $el.data("animation");
-    var delay = $el.data("delay");
+//     var animation = $el.data("animation");
+//     var delay = $el.data("delay");
 
-    // Mofile fix
-    if ($(window).width() < 768) {
-      delay = 0;
-    }
+//     // Mofile fix
+//     if ($(window).width() < 768) {
+//       delay = 0;
+//     }
 
-    if (delay) {
-      setTimeout(function () {
-        $el.addClass(animation);
-        $el.addClass("showing");
-        $el.removeClass("hiding");
-      }, delay);
-    } else {
-      $el.addClass(animation);
-      $el.addClass("showing");
-      $el.removeClass("hiding");
-    }
-  });
+//     if (delay) {
+//       setTimeout(function () {
+//         $el.addClass(animation);
+//         $el.addClass("showing");
+//         $el.removeClass("hiding");
+//       }, delay);
+//     } else {
+//       $el.addClass(animation);
+//       $el.addClass("showing");
+//       $el.removeClass("hiding");
+//     }
+//   });
 
   // Service hover animation
   // $(".service").hover(function() {
@@ -118,10 +118,10 @@ function initAnimations() {
   // });
 }
 
-$(document).ready(function () {
+// $(document).ready(function () {
   // initNavbar();
   // initPortfolio();
-  initAnimations();
+  // initAnimations();
 
   // var skillsDiv = jQuery('#skillzz');
 
@@ -137,7 +137,7 @@ $(document).ready(function () {
   // });
 
   // Something happens
-});
+// });
 
 // $(document).ready(function () {
 //   $(".portfolio-item .rowzz").isotope(function () {
