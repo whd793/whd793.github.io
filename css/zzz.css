@@ -252,6 +252,9 @@
 .sectionz.sectionz--portfolio {
   background-color: white;
   color: white;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   
 }
 .sectionz.sectionz--portfolio svg {
