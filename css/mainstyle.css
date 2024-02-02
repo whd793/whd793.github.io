@@ -151,11 +151,11 @@ ol {
 .navbar-toggle {
   border-radius: 0;
 }
-/* .navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #00ad70;
-  border-color: #00ad70;
-} */
+  background-color: #00ad7000;
+  /* border-color: #00ad7000; */
+}
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #fff;
 }
