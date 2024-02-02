@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <meta
     name="viewport"
@@ -21,11 +21,45 @@
     <link rel="stylesheet" href="css/zzz.css" defer />
     <link rel="stylesheet" href="css/style.css" defer />
     <link rel="stylesheet" href="css/stylezzz.css" defer />
+    <link rel="stylesheet" href="css/main.css" defer />
   </head>
   <body>
-   
+    <nav id="art-menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collasped"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home" style="padding: 10px 15px;"><img src="img/wet-cleaning.png" alt="home logo" /></a>
+        </div>
 
-    <div id="home" class="text-center" style="overflow: hidden;">
+        <!-- Navigation Toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collasped">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" class="scroll-nav">Home</a></li>
+            <!-- <li><a href="#skills" class="scroll-nav">Skills</a></li>                             -->
+            <li><a href="#about" class="scroll-nav">About</a></li>
+            <li><a href="#myapps" class="scroll-nav">Apps</a></li>
+            <li><a href="#studio" class="scroll-nav">Startup</a></li>
+
+            <li><a href="#portfolio" class="scroll-nav">Projects</a></li>
+            <li><a href="#contact" class="scroll-nav">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+
+
+    <div id="home" class="text-center">
       <div class="layer">
         <div class="content">
      
@@ -70,138 +104,120 @@
       </div>
     </div>
 
-    <section
-      class="sectionz sectionz--about"
-      id="about"
-      style="padding-top: 0; overflow: hidden;"
-    >
-      <!-- <svg
+    
+
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 10"
         preserveAspectRatio="none"
+        class="about_svg"
       >
         <polygon points="100 0 100 10 0 10" />
-      </svg> -->
+      </svg>
 
-      <div id="about" class="text-center">
-        <div class="container">
-          <div class="section-title center text-center">
+   
+        <div class="about_container">
+          <div class="section-title">
             <h2
               class=""
-              data-animation="fadeInLeft"
-              data-delay="0"
             >
               ABOUT ME
             </h2>
             <div
-              class="line "
-              data-animation="fadeInRight"
-              data-delay="300"
-            ></div>
+              class="line"></div>
           </div>
 
-          <div
-            class="conz"
-            style="
-              display: block;
-              margin: auto;
-              float: center;
-              text-align: center;
-            "
-          >
-            <div class="col-four" style="text-align: center; float: center">
+          <div class="about_fouricons">
+            <div class="about_col">
               <div
-                class="circlez service "
-                data-animation="fadeInUp"
-                data-delay="300"
+                class="about_circle"
               >
-                 <i
+                <i
                   class="fa fa-spinner fa-5x"
-                  style="font-size: 35px; margin-top: 28px; color: white"
+                  style="font-size: 52px;
+                  margin-top: 18px;
+                  margin-right: 2px;
+                  color: white;"
                 ></i>
-
-                <!-- <img class="icic" src="speed.png" /> -->
               </div>
-              <div
-                class="waypoint service "
-                data-animation="fadeInUp"
-                data-delay="300"
-              >
-                <div class="label bold">Fast</div>
+
+              <div>
+                <div class="label">Fast</div>
                 <div>
                   Fast load times and lag free interaction, my highest priority.
                 </div>
               </div>
             </div>
 
-            <div class="col-four">
+            <div class="about_col">
               <div
-                class="circlez service "
-                data-animation="fadeInUp"
-                data-delay="600"
+                class="about_circle"
+           
               >
                 <!-- <i class="mdi mdi-speedometer" style="font-size: 24px;"></i> -->
                 <i
                   class="fa fa-mobile fa-5x"
-                  style="font-size: 18px; margin-top: 36px; color: white"
+                  style="font-size: 68px;
+            margin-top: 12px;
+            margin-right: 2px;
+            color: white;"
                 ></i>
 
                 <!-- <img class="icic" src="speed.png" /> -->
               </div>
               <div
                 class="waypoint service "
-                data-animation="fadeInUp"
-                data-delay="600"
+             
               >
                 <div class="label bold">Responsive</div>
                 <div>My layouts will work on any device, big or small.</div>
               </div>
             </div>
 
-            <div class="col-four">
+            <div class="about_col">
               <div
-                class="circlez service "
-                data-animation="fadeInUp"
-                data-delay="900"
+                class="about_circle"
+    
               >
                 <!-- <i class="mdi mdi-speedometer" style="font-size: 24px;"></i> -->
                 <i
                   class="fa fa-lightbulb-o fa-5x"
-                  style="font-size: 40px; margin-top: 25px; color: white"
+                  style="font-size: 62px;
+            margin-top: 12px;
+            margin-right: 2px;
+            color: white;"
                 ></i>
               </div>
               <div
                 class="waypoint service "
-                data-animation="fadeInUp"
-                data-delay="900"
+       
               >
                 <div class="label bold">Intuitive</div>
                 <div>Strong preference for easy to use, intuitive UX/UI.</div>
               </div>
             </div>
 
-            <div class="col-four">
+            <div class="about_col">
               <div
-                class="circlez service "
-                data-animation="fadeInUp"
-                data-delay="1200"
+                class="about_circle"
+            
               >
-                <!-- <i class="mdi mdi-speedometer" style="font-size: 24px;"></i> -->
-                <!-- <img class="icic" src="speed.png" /> -->
+             
                 <i
                   class="fa fa-rocket fa-5x"
-                  style="
-                    font-size: 32px;
-                    margin-top: 28px;
-                    margin-right: 5px;
-                    color: white;
-                  "
+            style="font-size: 52px;
+            margin-top: 18px;
+            margin-right: 5px;
+            color: white;"
                 ></i>
               </div>
               <div
                 class="waypoint service "
-                data-animation="fadeInUp"
-                data-delay="1200"
+            
               >
                 <div class="label bold">Dynamic</div>
                 <div>
@@ -215,50 +231,27 @@
           </div>
 
           <div class="gap"></div>
-          <div class="row">
+
+
+          <div class="about_columns">
             <div
-              class="col-md-6 service "
-              data-animation="fadeInLeft"
-              data-delay="1200"
+              class="about_col_1"
             >
-              <div class="circlezz">
-                <!-- <i class="mdi mdi-speedometer" style="font-size: 24px;"></i> -->
+              <div class="avatar">
                 <img
                   class="icicz"
                   alt="avatar picture"
                   src="img/mf-avatar.svg"
                   style="top: -15px;"
                 />
-                <!-- style="border-radius: 50%; border: 5px solid rgb(238 238 238)" -->
 
               </div>
-              <!-- <div class="waypoint">
-                <div class="label bold">Who's this guy?</div>
-              </div> -->
-              <!-- <div class="waypoint" style="margin-top: 5px">
-                <a
-                  style="
-                    color: white;
-                    font-size: 15px;
-                    background-color: #de5e60;
-                    color: white;
-                    border-radius: 5px;
-                    border-bottom: 4px rgb(199, 66, 68) solid;
-                  "
-                  href="resume.pdf"
-                  download
-                  class="btn download"
-                  >DOWNLOAD RESUME</a
-                >
-              </div> -->
+            
 
               <div
-                class="desc-content"
-                style="text-align: left; margin-top: 16px"
+                class="about_content"
               >
-                <!-- <p style="margin-top: 20px">
-                  Hi there, I’m <strong>Won Lee</strong>.
-                </p> -->
+       
                 <p>
                   I graduated from Purdue University with BS in Web Programming
                   & Design
@@ -285,19 +278,16 @@
                 </p>
               </div>
             </div>
+
+
             <div
-              id="skillzz"
-              class="col-md-6 service "
-              data-animation="fadeInRight"
-              data-delay="1200"
+              class="about_col_2"
             >
             <div
-            class="desc-content"
-            style="text-align: left; margin-top: 16px"
+          
+           
           >
-            <!-- <p style="margin-top: 20px">
-              Hi there, I’m <strong>Won Lee</strong>.
-            </p> -->
+       
             <div>
               <h4>Frontend</h4>
               <div class="skz" >
@@ -373,312 +363,129 @@
             </div>
           </div>
           
-            <!-- <div class="desc-content clearfix">
-              <div>
-                <h4>Frontend</h4>
-                <div class="skills clearfix" >
-                  <span> HTML </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> CSS </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> Javascript </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> React.js </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> Redux </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> Typescript </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> Next.js </span>
-                </div>
-              </div>
-              <div>
-                <h4>Backend</h4>
-                <div class="skills clearfix" >
-                  <span> Node.js </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> Express.js</span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> PHP </span>
-                </div>
-                
-              </div>
-              <div>
-                <h4>Database</h4>
-                <div class="skills clearfix" >
-                  <span> MongoDB </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> MySQL</span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> Firebase </span>
-                </div>
-                <div class="skills clearfix" >
-                  <span> AWS </span>
-                </div>
-  
-                <div>
-                  <h4>Others:</h4>
-                  <div class="skills" >
-                    <span> Python </span>
-                  </div>
-                  <div class="skills" >
-                    <span> C#</span>
-                  </div>
-                  <div class="skills" >
-                    <span> Unity </span>
-                  </div>
-               
-                </div> -->
-              <!-- <div style="display: flex; justify-content: flex-end">
-                Years of experience:
-              </div>
-
-              <div class="skillbar clearfix" data-percent="80%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span> C#</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">5 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="80%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>HTML / CSS / Bootstrap</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">5 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="80%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>Javascript</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">5 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="70%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>Node.js</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">5 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="70%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>Express.js</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">5 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="70%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>React / Redux / Next.js</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">5 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="60%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>MySQL</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">3 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="60%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>MongoDB</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">3 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="50%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span> Java</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">2 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="50%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span> Python</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">2 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="50%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span> Typescript</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">2 years</div>
-              </div>
-
-              <div class="skillbar clearfix" data-percent="50%">
-                <div class="skillbar-title" style="background: #61b9f3">
-                  <span>PHP</span>
-                </div>
-                <div class="skillbar-bar" style="background: #3c81af"></div>
-                <div class="skill-bar-percent">2 years</div>
-              </div> -->
+           
             </div>
           </div>
 
-          <br /><br />
         </div>
-      </div>
+      
+        
     </section>
 
-    <section class="sectionz sectionz--intro" id="myapps" style="overflow: hidden;">
-      <!-- <div class="sectionz__inner"> -->
-      <!-- <svg
+
+
+
+    <section class="myapps" id="myapps">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
         id="botbot"
-        style="fill: #f0f0f0"
+        class="myapps_svg"
+        
       >
         <path d="M0 100 C 50 0 70 0 100 100 Z"></path>
-      </svg> -->
-      <!-- <div class="main"> -->
-      <!-- <div class="container">
-        <div class="section-title center text-center">
+      </svg>
+
+      <div class="myapps_container">
+        <div class="section-title">
           <h2
-            class="animated hiding"
-            data-animation="fadeInLeft"
-            data-delay="0"
+            class=""
           >
             PUBLISHED APPS
           </h2>
           <div
-            class="line animated hiding"
-            data-animation="fadeInRight"
-            data-delay="300"
-          ></div>
+            class="line"></div>
         </div>
-        <img
-          src="img/appz.webp"
-          alt="Mountains"
-          class="apps animated hiding"
-          data-animation="bounceIn"
-          data-delay="0"
-        />
 
-        <img
-          src="img/apps.webp"
-          alt="Mountains"
-          class="apps animated hiding"
-          data-animation="bounceIn"
-          data-delay="300"
-        />
-      </div> -->
-
-      <div class="container">
-        <div class="section-title center text-center">
-          <h2>PUBLISHED APPS</h2>
-          <div class="line"></div>
-        </div>
+      <div class="myapps_images">
+       
         <img src="img/appz.webp" alt="Mountains" class="apps" />
 
         <img src="img/apps.webp" alt="Mountains" class="apps" />
         <img src="img/speedyhero_installs.png" alt="Mountains" class="apps" />
         <h3 style="margin: 10px auto; width: 80%; display: block; text-align: center; font-weight: 400; color: #bababa;">More Apps Available!</h2>
       </div>
-
-      <!-- </div>  -->
-      <!-- </div> -->
+    </div>
+   
     </section>
 
-    <!-- <img src="pockapplogo.png" alt="Mountains" class="apps" />
-    <div>
-      <h3>Entertain the world</h3>
-      <p>We entertain users on mobile with our games and apps</p>
-    </div> -->
+  
 
-    <section class="sectionz sectionz--studio" id="studio" style="overflow: hidden;">
-      <!-- <svg
+
+
+    <section class="studio" id="studio">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
+        class="studio_svg"
       >
         <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-      </svg> -->
+      </svg>
 
+      <div class="studio_container">
       <div class="section-title center text-center" style="padding-bottom: 0">
         <h2 style="color: white">STARTUP</h2>
         <div class="line"></div>
       </div>
 
-      <h3 style="margin: auto; text-align: center">
-        Visionary founder of a mobile application company
-      </h3>
-      <!-- <p>We entertain users on mobile with our games and apps</p> -->
+            <h3 style="margin: auto; text-align: center">
+              Visionary founder of a mobile application company
+            </h3>
+            <!-- <p>We entertain users on mobile with our games and apps</p> -->
 
-      <img src="pockapplog.png" alt="Mountains" class="apps" />
-      <div style="margin: auto; text-align: center">
-        <h3>Entertain the world</h3>
-        <p>We entertain users on mobile with our games and apps</p>
-      </div>
+            <img src="pockapplog.png" alt="Mountains" class="apps" />
+            <div style="margin: auto; text-align: center">
+              <h3>Entertain the world</h3>
+              <p>We entertain users on mobile with our games and apps</p>
+            </div>
 
-      <div class="carousel">
-        <div class="carousel_items">
-          <video 
-            preload="auto"
-            id="myVideoID"
-            class="carousel_img inlinevideo"
-            height="400px"
-            width="3350px"
-            style="margin: auto"
-            loop
-            autoplay
-            muted
-            defaultmuted
-            playsinline
-            
-          >
-            <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
-            <source src="vids/s2_edit.mp4" type="video/mp4" />
-            <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-화면에 표시됩니다! -->
-          </video>
-        </div>
-      </div>
+                <div class="carousel">
+                  <div class="carousel_items">
+                    <video 
+                      preload="auto"
+                      id="myVideoID"
+                      class="carousel_img inlinevideo"
+                      height="400px"
+                      width="3350px"
+                      style="margin: auto"
+                      loop
+                      autoplay
+                      muted
+                      defaultmuted
+                      playsinline
+                      
+                    >
+                          <source src="vids/s2_edit.mp4" type="video/mp4" />
+                      <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
+          화면에 표시됩니다! -->
+                    </video>
+                  </div>
+                </div>
+    </div>
     </section>
 
-    <section class="sectionz sectionz--portfolio1" id="portfolio">
-      <!-- <svg
+
+
+    <section class="projects" id="projects">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
       >
         <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
-      </svg> -->
+      </svg>
 
-      <div class="section-title center text-center" style="padding-bottom: 0">
-        <h2 style="color: black">PROJECTS</h2>
-        <div class="line"></div>
-      </div>
+      <div class="projects-container">
+          <div class="section-title center text-center" style="padding-bottom: 0">
+            <h2 style="color: black">PROJECTS</h2>
+            <div class="line"></div>
+          </div>
 
-      <div class="portfolio-item service">
-        <div class="mainz">
-          <div class="rowzz">
+      <div class="projects-item">
+      
+         
             <div class="itemtwo unity">
               <!-- <a data-toggle="modal" data-target="#myModalt"> -->
               <div class="contentzz">
@@ -698,18 +505,9 @@
                 </div>
 
                 <br />
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+            
               </div>
 
-              <!-- </a> -->
             </div>
 
             <div class="itemtwo unity">
@@ -733,22 +531,13 @@
                 </div>
 
                 <br />
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -760,10 +549,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="gifs/bb.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Hoop Gatez App</h4>
 
@@ -780,21 +567,12 @@
                 >
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -806,10 +584,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/20.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Speedy Hero game</h4>
 
@@ -827,22 +603,12 @@
                 > 
                 
 
-                <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -854,10 +620,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/19.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Flappy Spin</h4>
 
@@ -870,27 +634,16 @@
                   <p><strong class="tagz"> Photoshop / Illustrator </strong></p>
                 </div>
                 
-                <!-- <a href="https://www.youtube.com/watch?v=tH6Hlx6yb9I"
-                  ><div class="textzzz">DEMO</div></a
-                >  -->
+          
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -902,10 +655,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/18.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Shooting Arrow</h4>
 
@@ -918,27 +669,16 @@
                   <p><strong class="tagz"> Photoshop / Illustrator </strong></p>
                 </div>
                 
-                <!-- <a href="https://www.youtube.com/watch?v=tH6Hlx6yb9I"
-                  ><div class="textzzz">DEMO</div></a
-                >  -->
+          
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -950,10 +690,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/25.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Spike Ball game</h4>
 
@@ -968,22 +706,13 @@
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -995,10 +724,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/23.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Hoop Dash Game</h4>
 
@@ -1013,15 +740,7 @@
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
@@ -1042,8 +761,7 @@
                 >
                   <!-- <source src="gifs/brickz.ogg" type="video/ogg" /> -->
                   <source src="gifs/brickz.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Bouncy Brickz Game</h4>
 
@@ -1058,21 +776,12 @@
 
                 <br />
 
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -1084,10 +793,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/1.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Speed Dash</h4>
 
@@ -1100,21 +807,11 @@
                   <p><strong class="tagz"> Photoshop / Illustrator </strong></p>
                 </div>
                 
-                <!-- <a href="https://www.youtube.com/watch?v=tH6Hlx6yb9I"
-                  ><div class="textzzz">DEMO</div></a
-                >  -->
+          
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
@@ -1133,8 +830,7 @@
                 >
                   <!-- <source src="gifs/100dunkb.ogg" type="video/ogg" /> -->
                   <source src="vids/13.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Dashy Hoop</h4>
                 <div>
@@ -1153,7 +849,6 @@
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -1165,10 +860,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/12.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Blast Hit</h4>
 
@@ -1181,27 +874,16 @@
                   <p><strong class="tagz"> Photoshop / Illustrator </strong></p>
                 </div>
                 
-                <!-- <a href="https://www.youtube.com/watch?v=tH6Hlx6yb9I"
-                  ><div class="textzzz">DEMO</div></a
-                >  -->
+          
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
             <div class="itemtwo unity">
               <div class="contentzz">
-                <!-- <img src="gifs/bb.webm" alt="Mountains" /> -->
                 <video 
                   preload="auto"
                   height="100%"
@@ -1213,10 +895,8 @@
                   defaultmuted
                   playsinline
                 >
-                  <!-- <source src="gifs/bb.ogg" type="video/ogg" /> -->
                   <source src="vids/11.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Kunai Flip</h4>
 
@@ -1229,21 +909,11 @@
                   <p><strong class="tagz"> Photoshop / Illustrator </strong></p>
                 </div>
                 
-                <!-- <a href="https://www.youtube.com/watch?v=tH6Hlx6yb9I"
-                  ><div class="textzzz">DEMO</div></a
-                >  -->
+          
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
@@ -1269,15 +939,7 @@
                 </div>
 
                 <br />
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
@@ -1372,8 +1034,7 @@
                 >
                   <!-- <source src="gifs/soccerio.ogg" type="video/ogg" /> -->
                   <source src="gifs/soccerio.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Soccer.io Game</h4>
                 <div>
@@ -1403,8 +1064,7 @@
                 >
                   <!-- <source src="gifs/speedyhero.ogg" type="video/ogg" /> -->
                   <source src="gifs/speedyhero.mp4" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Speed Hero Game</h4>
                 <div>
@@ -1471,8 +1131,7 @@
                 >
                   <!-- <source src="gifs/100dunkb.ogg" type="video/ogg" /> -->
                   <source src="vids/2.mov" type="video/mp4" />
-                  <!-- 이 문장은 여러분의 브라우저가 video 태그를 지원하지 않을 때
-                  화면에 표시됩니다! -->
+            
                 </video>
                 <h4>Flippy Golf</h4>
                 <div>
@@ -1571,21 +1230,11 @@
                   <p><strong class="tagz"> Photoshop / Illustrator </strong></p>
                 </div>
                 
-                <!-- <a href="https://www.youtube.com/watch?v=tH6Hlx6yb9I"
-                  ><div class="textzzz">DEMO</div></a
-                >  -->
+          
                 
 
                 <!-- <br /> -->
-                <!-- <a href="https://www.hulu.com"
-                  ><div class="textzzz">SOURCE CODE</div></a
-                >
-
-                <div style="display: block; margin: 10px"></div>
-
-                <a href="https://www.hulu.com"
-                  ><div class="textzzz">DEMO</div></a
-                > -->
+              
               </div>
             </div>
 
@@ -1874,97 +1523,93 @@
                 >
               </div>
             </div>
-          </div>
-        </div>
+         
+      
       </div>
-
+    </div>
       <!-- </div> -->
       <!-- </div> -->
       <br id="contact" />
     </section>
 
+
     <section
-      class="sectionz sectionz--portfolio text-center"
-      id="contact"
-      style="background-color: #1b1d22; overflow: hidden;"
+    class="contact"
+    id="contact"
+    style="background-color: #1b1d22"
+  >
+  
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      class="contact_svg"
     >
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none" class="bottom">
-                        <path d="M0 0 L50 100 L100 0 Z"></path>
-                    </svg> -->
-      <!-- <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-        id="botbotz"
-      >
-        <path d="M0 100 C 20 0 150 0 100 100 Z"></path>
-      </svg> -->
-      <!-- <div id="contact" class="text-center" style="background-color: #252934;"> -->
-      <div
-        class="container "
-        data-animation="bounceIn"
-        data-delay="0"
-      >
-        <div class="section-title center">
-          <h2>CONTACT</h2>
-          <div class="line"></div>
-        </div>
-        <!-- <div class="gap"></div> -->
-        <div
-          class="address service "
-          data-animation="fadeInRight"
-          data-delay="300"
-        >
-          Want to get in touch with me? Just feel free to drop me a line
-          anytime.
-        </div>
-        <div
-          class=""
-          data-animation="fadeInLeft"
-          data-delay="300"
-        >
-          <br />
-          <br />
-          <p class="" style="font-size: 22px; color: #666; font-weight: 400">
-            <i class="fa fa-envelope fa-2x" style="margin-right: 10px"></i>
-            whd793@gmail.com
-          </p>
-          <!-- <p class="" style="font-size: 22px; font-weight: 400;">                                <i class="fa fa-phone fa-2x" style="margin-right: 10px;"></i>
-                                404-933-5130</p> -->
-          <!-- <p class="" style="font-size: 22px; font-weight: 400; margin-bottom: 0;">                                <i class="fa fa-home fa-2x" style="margin-right: 10px;"></i>
-                                 Cumming, GA 30041</p> -->
-        </div>
-        <br /><br />
-        <br /><br /><br />
-        <div
-          class="socialiconz "
-          data-animation="fadeInUp"
-          data-delay="600"
-        >
-          <a href="https://www.linkedin.com/in/whd793" class="iconlinkz">
-            <!-- <div class="" id="icon-2"> -->
-            <i class="fa fa-linkedin fa-5x"></i>
-            <!-- </div> -->
-          </a>
-
-          <a href="https://github.com/whd793" class="iconlinkz">
-            <!-- <div class="icon" id="icon-3"> -->
-            <i class="fa fa-github fa-5x"></i>
-            <!-- </div> -->
-          </a>
-          <a href="mailto:whd793@gmail.com" class="iconlinkz">
-            <!-- <div class="icon" id="icon-4"> -->
-            <i class="fa fa-envelope fa-5x"></i>
-            <!-- </div> -->
-          </a>
-        </div>
-        <br /><br /><br /><br />
+      <path d="M0 100 C 20 0 150 0 100 100 Z"></path>
+    </svg>
+    <!-- <div id="contact" class="text-center" style="background-color: #252934;"> -->
+    <div class="contact_container">
+      <div class="section-title center">
+        <h2>CONTACT</h2>
+        <div class="line"></div>
       </div>
+     
+      <div class="contactbox">
 
-      <p class="">WONHEE LEE &copy; 2019</p>
+      <div
+     
+      >
+        
+        <p class="" style="font-size: 22px; color: #666; font-weight: 400">
+          <i class="fa fa-envelope fa-2x" style="margin-right: 10px; color: #666"></i>
+          whd793@gmail.com
+        </p>
+   
+      </div>
+     
+      <div
+        class="socialiconz "
+      
+      >
+        <a href="https://www.linkedin.com/in/whd793" class="iconlinkz">
+          <i class="fa fa-linkedin fa-5x"></i>
 
-      <!-- </div> --><br /><br />
-    </section>
+        </a>
+
+        <a href="https://github.com/whd793" class="iconlinkz">
+
+          <i class="fa fa-github fa-5x"></i>
+
+        </a>
+        <a href="mailto:whd793@gmail.com" class="iconlinkz">
+
+          <i class="fa fa-envelope fa-5x"></i>
+
+        </a>
+      </div>
+      <p class="copyright">WON LEE &copy; 2019</p>
+    </div>
+    </div>
+
+  </section>
+    
+
+
+  
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+    </script>
+
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.3.3/jquery.appear.min.js"></script>
