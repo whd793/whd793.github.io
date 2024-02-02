@@ -44,40 +44,40 @@ function initNavbar() {
   });
 }
 
-function initPortfolio() {
-  var $portfolio = $("#portfolio");
-  var $items = $portfolio.find(".items");
-  var $filters = $portfolio.find(".filters li a");
+// function initPortfolio() {
+//   var $portfolio = $("#portfolio");
+//   var $items = $portfolio.find(".items");
+//   var $filters = $portfolio.find(".filters li a");
 
-  $items.imagesLoaded(function () {
-    $items.isotope({
-      itemSelector: ".item",
-      layoutMode: "fitRows",
-      transitionDuration: "0.7s",
-    });
-  });
+//   $items.imagesLoaded(function () {
+//     $items.isotope({
+//       itemSelector: ".item",
+//       layoutMode: "fitRows",
+//       transitionDuration: "0.7s",
+//     });
+//   });
 
-  $filters.click(function () {
-    var $el = $(this);
+//   $filters.click(function () {
+//     var $el = $(this);
 
-    $filters.removeClass("active");
+//     $filters.removeClass("active");
 
-    $el.addClass("active");
+//     $el.addClass("active");
 
-    var selector = $el.attr("data-filter");
+//     var selector = $el.attr("data-filter");
 
-    $items.isotope({
-      filter: selector,
-    });
+//     $items.isotope({
+//       filter: selector,
+//     });
 
-    return false;
-  });
+//     return false;
+//   });
 
-  $items.find(".item a").venobox({
-    border: "2rem",
-    closeBackground: "transparent",
-  });
-}
+//   $items.find(".item a").venobox({
+//     border: "2rem",
+//     closeBackground: "transparent",
+//   });
+// }
 
 function initAnimations() {
   var $animated = $(".animated");
@@ -125,36 +125,36 @@ $(document).ready(function () {
 
   // var skillsDiv = jQuery('#skillzz');
 
-  jQuery(".skillbar").each(function () {
-    jQuery(this)
-      .find(".skillbar-bar")
-      .animate(
-        {
-          width: jQuery(this).attr("data-percent"),
-        },
-        2000
-      );
-  });
+  // jQuery(".skillbar").each(function () {
+  //   jQuery(this)
+  //     .find(".skillbar-bar")
+  //     .animate(
+  //       {
+  //         width: jQuery(this).attr("data-percent"),
+  //       },
+  //       2000
+  //     );
+  // });
 
   // Something happens
 });
 
-$(document).ready(function () {
-  $(".portfolio-item .rowzz").isotope(function () {
-    itemSelector: ".itemtwo";
-  });
+// $(document).ready(function () {
+//   $(".portfolio-item .rowzz").isotope(function () {
+//     itemSelector: ".itemtwo";
+//   });
 
-  $(".portfolio-menu ul li").click(function () {
-    $(".portfolio-menu ul li").removeClass("active");
-    $(this).addClass("active");
+//   $(".portfolio-menu ul li").click(function () {
+//     $(".portfolio-menu ul li").removeClass("active");
+//     $(this).addClass("active");
 
-    var selector = $(this).attr("data-filter");
-    $(".portfolio-item .rowzz").isotope({
-      filter: selector,
-    });
-    return false;
-  });
-});
+//     var selector = $(this).attr("data-filter");
+//     $(".portfolio-item .rowzz").isotope({
+//       filter: selector,
+//     });
+//     return false;
+//   });
+// });
 
 // $(window).on("load", function() {
 
