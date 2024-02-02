@@ -151,11 +151,11 @@ ol {
 .navbar-toggle {
   border-radius: 0;
 }
-.navbar-default .navbar-toggle:hover,
+/* .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #00ad70;
   border-color: #00ad70;
-}
+} */
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #fff;
 }
@@ -547,10 +547,10 @@ a.fa.fa-angle-down {
   margin-top: 45px;
   transition: all 0.5s;
 }
-a.fa.fa-angle-down:hover {
+/* a.fa.fa-angle-down:hover {
   color: #00ad70;
   border: 2px solid #00ad70;
-}
+} */
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
