@@ -218,13 +218,13 @@
 }
 
 .sectionz.sectionz--studio {
-  background-color: rgb(184 33 0);
+  background-color: rgb(185 0 0);
   color: white;
 }
 
 .sectionz.sectionz--studio svg {
   /* top: -20px; */
-  fill: rgb(184 33 0);
+  fill: rgb(185 0 0);
 }
 /* 
 .sectionz.sectionz--studio h2 {
